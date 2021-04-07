@@ -33,8 +33,8 @@ GPIO.output(rclk, GPIO.LOW)
 spi_shift = spidev.SpiDev()
 spi0 = spidev.SpiDev()
 
-spi_setup(spi_shift, 0, 0, spi_speed)
-spi_setup(spi0, 1, 0, spi_speed)
+spi_setup(spi_shift, 1, 0, spi_speed)
+spi_setup(spi0, 0, 0, spi_speed)
 
 #Sets up the first 8 bits that will be sent to the ADC
 #Five leading zeros     Start Bit    SGL/DIFF Bit    D2
